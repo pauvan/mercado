@@ -52,45 +52,6 @@ Este proyecto es una API REST simple construida con Spring Boot para manejar pro
 - **Eliminar producto** (DELETE)
   - URL: `DELETE /api/products/{id}`
 
-### Actividades
-
-- **Crear actividad** (POST)
-  - URL: `POST /api/activities`
-  - Body JSON:
-    ```json
-    {
-      "title":"...",
-      "description":"...",
-      "status":"BACKLOG",
-      "priority":"HIGH",
-      "dueDate":"2026-03-01"
-    }
-    ```
-
-- **Listar actividades** (GET)
-  - URL: `GET /api/activities`
-
-- **Obtener actividad por id** (GET)
-  - URL: `GET /api/activities/{id}`
-
-- **Actualizar actividad** (PUT)
-  - URL: `PUT /api/activities/{id}`
-  - Body JSON: similar a crear
-
-- **Marcar como done** (PATCH)
-  - URL: `PATCH /api/activities/{id}/done`
-
-- **Cambiar estado** (PATCH)
-  - URL: `PATCH /api/activities/{id}/status?value=VALUE`
-
-- **Eliminar actividad** (DELETE)
-  - URL: `DELETE /api/activities/{id}`
-
-## Uso con Postman
-
-1. Importar colección o crear peticiones manualmente usando las rutas anteriores.
-2. Asegúrate de usar `Content-Type: application/json` en los cuerpos de POST/PUT.
-3. Se pueden probar validaciones enviando datos faltantes o incorrectos.
 
 ## Notas
 
